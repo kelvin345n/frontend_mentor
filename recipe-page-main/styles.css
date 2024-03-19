@@ -1,6 +1,7 @@
 #window {
+    border: none;
     width: 100vw;
-    height: 100%;
+    height: 105%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,6 +19,16 @@
     margin: 100px 0 100px 0;
 }
 
+@font-face {
+    font-family: 'Young Serif';
+    src: url('https://fonts.google.com/specimen/Young+Serif') format('truetype');
+    /* Add other font formats (e.g., woff, woff2) for better browser support */
+  }
+  
+  body {
+    font-family: 'Young Serif', sans-serif;
+  }
+
 img {
     width: 670px;
     border-radius: 13px;
@@ -25,27 +36,32 @@ img {
     box-sizing: border-box;
 }
 
+.omelette-title{
+    margin-bottom: 0px;
+}
+
 .image {
     align-self: center;
 }
 
 .body{
+
     width: 670px;
     align-self:center;
 }
 
 .preparation-container{
+    border-top: 10px;
     background-color: hsl(330, 100%, 98%);
     border-radius: 12px;
-    border: 15px;
 }
 
 .preparation{
-    
+    padding: 1px 0px 20px 25px;
 }
 
 .brown{
-    color: hsl(30, 10%, 34%);
+    color: hsl(14, 45%, 36%);
 }
 
 .prep{
@@ -53,17 +69,55 @@ img {
 }
 
 .hr{
+    color: #ddd;
+}
 
+.instruction-text{
+    padding-left: 15px;
+    padding-bottom: 8px;
+}
+
+.ingredients-list{
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+
+h1{
+    margin-bottom: 0px;
+}
+p{
+    margin-top: 14px;
+    margin-bottom: 25px
+}
+h2 {
+    margin-bottom: 10px;
+}
+li{
+    border-left: 50px;
+    padding-left: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+li::marker{
+    color: hsl(14, 45%, 36%);
 }
 
 ul li {
+    margin-top: 5px;
     margin-bottom: 5px;
 }
+
+
 ol li {
     margin-bottom: 5px;
 }
 
+ol li::marker{
+    font-weight: bold;
+}
+
 table {
+    width: 100%;
     border-bottom: 10px;
     height: 100px;
     margin-bottom: 20px;
@@ -72,7 +126,7 @@ table {
 
 tr {
     tr:nth-child(even) {background-color: #f2f2f2;}
-    :hover {background-color: pink;};
+    
 }
 td {
     border-spacing: 100px;
